@@ -105,7 +105,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="py-8 flex flex-wrap space-y-3 justify-center lg:justify-between items-center bordwe-t">
+        <div className="py-8 flex border-t flex-wrap space-y-3 justify-center lg:justify-between items-center bordwe-t">
           <p className="text-sm">
             © {new Date().getFullYear()}{" "}
             <a
