@@ -1,129 +1,147 @@
-import React from "react";
-import FooterCrad from "../components/FooterCard";
-import { FiPhoneCall } from "react-icons/fi";
-import Link from "next/link";
-import { AiOutlineHome, AiOutlineMail, AiFillMail } from "react-icons/ai";
-import Button from "../components/shared/Button";
+import React from 'react'
+import FooterCard from '../components/FooterCard'
+import { FiPhoneCall } from 'react-icons/fi';
+import { AiOutlineHome, AiOutlineMail } from 'react-icons/ai';
+import Link from "next/link"
+import Button from '../components/shared/Button';
+
 const Footer = () => {
   return (
     <footer className="bg-white border-t">
       <div className="container">
-        <div className="flex justify-between space-y-4 my-5 flex-wrap pb-10 pt-8 border-b item-center">
-          <FooterCrad
-            image="/icons/f_1.svg"
-            title="Free Shopping"
-            subtitle="For all order over $220"
+        {/* footer infos */}
+        <div className="flex flex-wrap space-y-4 pb-10 pt-8 border-b justify-between items-center">
+          <FooterCard
+            image="/icons/f (1).svg"
+            title="Free Shipping"
+            subtitle="For all orders over $200"
           />
-          <FooterCrad
-            image="/icons/f_2.svg"
+          <FooterCard
+            image="/icons/f (2).svg"
             title="1 & 1 Returns"
             subtitle="Cancellation after 1 day"
           />
-          <FooterCrad
-            image="/icons/f_3.svg"
+          <FooterCard
+            image="/icons/f (3).svg"
             title="100% Secure Payment"
             subtitle="Gurantee secure payments"
           />
-          <FooterCrad
-            image="/icons/f_4.svg"
+          <FooterCard
+            image="/icons/f (4).svg"
             title="24/7 Dedicated Support"
             subtitle="Anywhere & anytime"
           />
-          <FooterCrad
-            image="/icons/f_5.svg"
+          <FooterCard
+            image="/icons/f (5).svg"
             title="Daily Offers"
             subtitle="Discount up to 70% OFF"
           />
         </div>
-        <div className="my-10 flex gap-10 flex-wrap justify-between">
+        {/* footer widgets */}
+        <div className="my-10 flex flex-wrap gap-10 justify-between">
+          {/* Contacts */}
           <div className="max-w-sm">
-            <h2 className="text-lg font-bold mb-5 ">
-              Farmart - Your Online Foods & Grocer
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              finibus viverra iaculis. Etiam vulputate et justo eget
-              scelerisque.
-            </p>
-            <div className="mt-10 space-y-4">
+            <h2 className="text-xl mb-5 font-bold">Farmart - Your Online Foods & Grocery</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus viverra iaculis. Etiam vulputate et justo eget scelerisque.</p>
+            <div className="mt-10 space-y-2">
               <span className="flex">
-                <FiPhoneCall className="text-color mt-2 " />
+                <FiPhoneCall className="text-color mt-[5px]" />
                 <div className="ml-4">
-                  <p>Hotline 24/7: </p>
-                  <h3 className="text-2xl font-bold ">(+880) 1785-504676</h3>
+                  <p>Hotline 24/7:</p>
+                  <h3 className="text-2xl font-bold">(+880) 1787-463481 </h3>
                 </div>
               </span>
-              <span className="flex !mt-7">
-                <AiOutlineHome className="text-color mt-2 " />
-                <address className="ml-4 text-color not-italic">
-                  Jamalpur, Dhaka 2041, Bangladesh
-                </address>
+              <span className="flex !mt-5">
+                <AiOutlineHome className="text-color mt-[5px]" />
+                <address className="ml-4 text-color not-italic">Badda, Dhaka 1212, Bangladesh</address>
               </span>
-              <span className="flex !mt-7">
-                <AiOutlineMail className="text-color mt-2 " />
-                <p className="ml-4">eyasindevofficial@gmail.com</p>
+              <span className="flex">
+                <AiOutlineMail className="text-color mt-[5px]" />
+                <p className="ml-4">khalideofficial@gmail.com</p>
               </span>
             </div>
           </div>
+          {/* Links */}
           <div className="">
             <h2 className="text-lg mb-6 font-bold">Useful Links</h2>
             <ul className="space-y-5">
-              <FooterLink href="/" text="About Us" />
-              <FooterLink href="/" text="Contact" />
-              <FooterLink href="/" text="Career" />
-              <FooterLink href="/" text="Help Center" />
-              <FooterLink href="/" text="Sitemap" />
+              <FooterLink
+                href="/"
+                text="About Us"
+              />
+              <FooterLink
+                href="/"
+                text="Contact"
+              />
+              <FooterLink
+                href="/"
+                text="Help Center"
+              />
+              <FooterLink
+                href="/"
+                text="Career"
+              />
+              <FooterLink
+                href="/"
+                text="Sitemap"
+              />
             </ul>
           </div>
+          {/* Links */}
           <div className="">
             <h2 className="text-lg mb-6 font-bold">Help Center</h2>
             <ul className="space-y-5">
-              <FooterLink href="/" text="Payment" />
-              <FooterLink href="/" text="Shipping" />
-              <FooterLink href="/" text="Product Returns" />
-              <FooterLink href="/" text="FAQ" />
-              <FooterLink href="/" text="Checkout" />
+              <FooterLink
+                href="/"
+                text="Payments"
+              />
+              <FooterLink
+                href="/"
+                text="Shipping"
+              />
+              <FooterLink
+                href="/"
+                text="Product Returns"
+              />
+              <FooterLink
+                href="/"
+                text="FAQ"
+              />
+              <FooterLink
+                href="/"
+                text="Checkout"
+              />
             </ul>
           </div>
+          {/* Newsletter */}
           <div className="lg:max-w-sm">
-            <h2 className="text-xl font-bold mb-5 ">Farmart Newsletter</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              finibus viverra iaculis..
-            </p>
-
+            <h2 className="text-lg mb-6 font-bold">Farmart Newsletter</h2>
+            <p>Register now to get updates on promotions and coupns. Don't worry! We not spam</p>
             <div className="flex items-center mt-5">
-              <div className="flex flex-1 items-center border p-4 rounded ">
-                <AiFillMail className="text-title mt-2 " />
+              <div className="flex flex-1 items-center border p-4 rounded">
+                <AiOutlineMail className="text-title mt-[5px]" />
                 <input
                   type="text"
                   placeholder="Your email..."
-                  className="outline-none bg-transparent px-4 flex-1 "
+                  className="outline-none bg-transparent px-4 flex-1"
                 />
               </div>
-              <Button title="Subscribe" className="self-stretch" />
+              <Button
+                title="Subscribe"
+                className="self-stretch"
+              />
             </div>
           </div>
         </div>
-        <div className="py-8 flex border-t flex-wrap space-y-3 justify-center lg:justify-between items-center bordwe-t">
-          <p className="text-sm">
-            © {new Date().getFullYear()}{" "}
-            <a
-              href="https://eyasinarafat.com"
-              className="underline"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Eyasin Arafat
-            </a>
-            . No Rights Reserved. Build for fun.
-          </p>
+        {/* Copyright */}
+        <div className="py-8 flex flex-wrap space-y-3 justify-center md:justify-between items-center border-t ">
+          <p className="text-sm">© {new Date().getFullYear()} <a href="https://khaliddev.com" className="underline" target="_blank" rel="noreferrer">khalid Saifullah</a>. No Rights Reserved 🙂. Build for fun.</p>
           <img src="/images/footer-new-payment.png" alt="" />
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
 const FooterLink = ({ href = "#", text }) => (
   <li>
@@ -131,6 +149,6 @@ const FooterLink = ({ href = "#", text }) => (
       <a href={href}>{text}</a>
     </Link>
   </li>
-);
+)
 
-export default Footer;
+export default Footer
