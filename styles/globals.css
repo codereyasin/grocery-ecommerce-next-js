@@ -48,8 +48,12 @@ p{
     display: none;
   }
 
+
   .no-scrollbar {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+  }
+  .products-crad{
+    @apply !min-w-[285px] flex flex-col items-start cursor-pointer p-5 rounded-md hover:card-shadow transition-all duration-500 relative hover:border-gray-200 border-gray-100 border 
   }
 }

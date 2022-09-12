@@ -3,11 +3,8 @@ import { setBackgroundImage } from '../../utils/helpers'
 
 const HomeHero = () => {
     return (
-        <section
-            class="py-10"
-            style={setBackgroundImage('/images/hero-bg.jpg')}
-        >
-            <div class="container">
+        <section>
+            <div className="container">
                 <div className="flex gap-8 flex-wrap">
                     {/* Hero Left Banner */}
                     <div className="flex-1 md:py-16 md:px-14 py-10 px-6 rounded-lg" style={setBackgroundImage('/images/hero-s-2.jpg')}>
